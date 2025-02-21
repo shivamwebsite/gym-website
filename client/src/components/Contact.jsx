@@ -29,7 +29,7 @@ function Contact() {
     e.preventDefault();
     const {fname,email,mobile,messg} = udata;
     // console.log(udata)
-    const res = await fetch("http://localhost:7000/feed", {
+    const res = await fetch("https://gym-website-backend-of83.onrender.com/feed", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
