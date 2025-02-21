@@ -1,0 +1,25 @@
+#shivam img {
+    border-radius: 10px;
+    border: 2px solid red;
+    padding: 4px;
+}
+
+#body img {
+    border-radius: 5px;
+    border: 2px solid blue;
+    padding: 4px;
+}
+
+#nbody img {
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    border: 2px solid red;
+    padding: 4px;
+}
+.main img:hover {
+    transform: translateX(50px) scale(1.7);
+    z-index: 500;
+    border: none;
+    /* transform: */
+  }

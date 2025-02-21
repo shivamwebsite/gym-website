@@ -1,0 +1,89 @@
+.contactcontain {
+    border: 2px solid rgb(226, 232, 240);
+    border-radius: 5px;
+    width: 400px;
+    height: 650px;
+    padding: 32px;
+    float: right;
+    position: relative;
+    right: 100px;
+    bottom: 700px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+
+}
+
+@media(max-width:500px) {
+    .contactcontain {
+        right: 1px;
+        padding: 10px;
+        width: 270px;
+    }
+}
+
+.contactinput {
+    width: 98%;
+    height: 32px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    color: black;
+}
+
+#messg {
+    width: 98%;
+    height: 130px;
+}
+.contactbtn {
+    font-size: 18px;
+    padding: 10px;
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* .contactbtn:hover {
+    color: black;
+    background-color: blue;
+} */
+
+.contactinside {
+    margin: 10px 0px 10px 0px;
+}
+
+.contactcontain h2 {
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: black;
+}
+
+.contactcontain p {
+    margin: 5px 0px 30px 0px;
+    color: rgb(47, 46, 46);
+    font-weight: bold;
+    font-size: 15px;
+}
+@media(max-width:707px) {
+    .contactcontain {
+        right: 50px;
+    }
+}
+
+@media(max-width:500px) {
+    .contactcontain {
+        right: 1px;
+        padding: 10px;
+        width: 270px;
+    }
+}
+.container10{
+    filter: grayscale(1) contrast(1.2) opacity(0.4);
+}
+.contactinput::placeholder{
+    color: rgb(46, 46, 46);
+}

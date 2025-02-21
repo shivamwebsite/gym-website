@@ -1,0 +1,169 @@
+
+/* LOGIN PAGE  */
+#bodystart {
+    background-image: url(7.jpeg);
+    /* background-color: blue; */
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    position: relative;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    left: 5px;
+}
+
+.topHeader {
+    font-size: 30px;
+    position: relative;
+    left: 15px;
+    bottom: 20px;
+    font-weight: bold;
+    font-family: Comic Sans Ms;
+}
+
+.formbox {
+    display: flex;
+    position: relative;
+    padding: 50px 100px 40px 100px;
+    width: 280px;
+    /* height: 470px; */
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid white;
+    box-shadow: 0px 0px 25px white;
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+}
+
+.formcontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputtext {
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding: 0 0 0 20px;
+    opacity: 90%;
+    color: black;
+    font-weight: bold;
+}
+
+.red{
+    color: rgb(47, 31, 31);
+    font-weight: bold;
+    font-size: 17px;
+}
+::-webkit-input-placeholder {
+    color: grey;
+}
+
+.l {
+    position: relative;
+    top: -29px;
+    right: 20px;
+}
+
+.submitButton {
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-family: Comic Sans Ms;
+    background-color: black;
+}
+
+#forgotpw {
+    position: relative;
+    color: rgb(232, 244, 214);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    left: 35px;
+}
+
+.i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+#forgotpw:hover {
+    cursor: pointer;
+    color:blue;
+}
+.topHeader h1{
+    margin: 10px;
+}
+ a{
+    color: rgb(232, 244, 214);
+    /* text-decoration: none; */
+}
+@media(max-width:400px){
+    .social i{
+        /* border: none; */
+        margin: 30px 3px 30px 3px;
+    }
+    .topHeader{
+        font-size: 22px;
+        position: relative;
+        left: 50px;
+    }
+    .formbox{
+        padding: 50px 50px 40px 50px;
+    }
+}
+
+.Button:hover {
+    cursor: pointer;
+    background-color: blue;
+    color: black;
+}
+
+@media(max-width:500px) {
+    .formbox {
+        height: 100vh;
+        width: 100vh;
+        border: none;
+        backdrop-filter: blur(2px);
+    }
+}
+
+@media(max-width:1486px) {
+    .button {
+        margin-top: 20px;
+       
+    }
+}
+
+@media(max-width:1374px) {
+    .nav {
+        margin-top: 20px;
+        margin-left: 1px;
+    }
+}
+
