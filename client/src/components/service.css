@@ -75,7 +75,7 @@
     position: relative;
 }
 .backimg::before {
-    background: url("service.jpg") center center/cover;
+    background: url("/service.jpg") center center/cover;
     content: "";
     position: absolute;
     top: 0;

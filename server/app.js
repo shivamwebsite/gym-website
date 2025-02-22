@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cookieParser(""));
 app.use(cors())
 
-const port=7000
+const port=process.env.PORT || 7000;
 const DB = process.env.DATABASE;
 
 mongoose.connect(DB).then(()=>{
