@@ -15,7 +15,7 @@ function Profile() {
         <>
             <div className="profilebody">
             <header class="profileedit">
-                <img align="right" src="shiv.jpeg" alt="error" />
+                <img align="right" src="/shiv.jpeg" alt="error" />
                 <h1 class="profiletopheader">SHIVAM PRASAD SHAW</h1>
                 <div class="bottomheader">DOB:-06/05/2002</div>
                 <div class="bottomheader">Address:-24/1 Dr.H.K.Chaterjee Lane,Ghusuri Howrah -711107</div>
@@ -83,7 +83,7 @@ function Profile() {
                 <div class="para">
 
                     <ol>
-                        <img align="right" src="shiv.jpeg" alt="error" />
+                        <img align="right" src="/shiv.jpeg" alt="error" />
                         <br />
                         <li>Financial Modelling From EDX.</li>
                         <li>Artificial Intelligence And Machine Learning Course From TCS.</li>
@@ -102,7 +102,7 @@ function Profile() {
                 <div class="para">
                     <ul>
                         <ol>
-                            <img align="left" src="shiv.jpeg" alt="error" />
+                            <img align="left" src="/shiv.jpeg" alt="error" />
                             <li>Won 1st Position In Inter School Carrom Competition.</li>
                             <li>Participated In Smart India Hackathon.</li>
                             <li>Participated In Inter College Chess Competition.</li>
@@ -121,7 +121,7 @@ function Profile() {
                 <div className='profilecontactdetails'>
                     <div class="profilefix">
                         <div class="para1">
-                            <img src=" shiv.jpeg" alt="error" />
+                            <img src="/shiv.jpeg" alt="error" />
                         </div>
                         <div class="profilespan">Maitreyi Ray Kanjilal (Principal)</div>
                         <div class="profilespan">033 2563777</div>
@@ -129,7 +129,7 @@ function Profile() {
                     </div>
                     <div class="profilefix">
                         <div class="para1">
-                            <img src=" shiv.jpeg" alt="error" />
+                            <img src="/shiv.jpeg" alt="error" />
                         </div>
                         <div class="profilespan">Ricky Gupta (Principal)</div>
                         <div class="profilespan">9830445410</div>
@@ -137,7 +137,7 @@ function Profile() {
                     </div>
                     <div class="profilefix">
                         <div class="para1">
-                            <img src=" shiv.jpeg" alt="error" />
+                            <img src="/shiv.jpeg" alt="error" />
                         </div>
                         <div class="profilespan">Josha Vimcett (Principal)</div>
                         <div class="profilespan">8448449773</div>
