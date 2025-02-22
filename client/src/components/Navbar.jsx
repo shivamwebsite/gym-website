@@ -33,7 +33,7 @@ function Navbar() {
       <span className="handle" onClick={handlebaar}><RxDragHandleHorizontal /></span>
       <div class=" nav">
         <nav>
-          <NavLink   className={(e)=>{return e.isActive ? "jabnavbaractive" : "navbar"}} to="/about" target='_blank'>About</NavLink>
+          <NavLink   className="navbar" to="/about">About</NavLink>
           <NavLink   className={(e)=>{return e.isActive ? "jabnavbaractive" : "navbar"}} to="/service">Services</NavLink>
           <NavLink  className={(e)=>{return e.isActive ? "jabnavbaractive" : "navbar"}} to="/contact">Contact Us</NavLink>
           <NavLink   className={(e)=>{return e.isActive ? "jabnavbaractive" : "navbar"}} to="/">Log Out</NavLink>
