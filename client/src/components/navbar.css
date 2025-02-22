@@ -12,6 +12,7 @@
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
+    position: relative;
   }
 
 
@@ -84,8 +85,21 @@ header img {
     font-family: Arial, Helvetica, sans-serif;
     border-left: 2px solid white;
     margin-left: 15px;
-    margin-right: 250px;
+    /* margin-right: 250px; */
     color: white;
+  }
+
+  .navbarbutton {
+    font-size: 15px;
+    color: grey;
+    background-color: white;
+    border: none;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    display: flex;
+    position: absolute;
+    right: 80px;
+    top: 60px;
   }
 
   .navbar {
@@ -97,15 +111,7 @@ header img {
     /* margin-left: 20px; */
     color:black;
   }
-  .navbarbutton {
-    font-size: 15px;
-    color: grey;
-    background-color: white;
-    border: none;
-    padding: 5px 15px 5px 15px;
-    border-radius: 5px;
-    display: flex;
-  }
+
 
   .button:hover {
     color: black;
@@ -132,15 +138,37 @@ header img {
     /* background-color: blue; */
     text-decoration: none;
   }
-  @media(max-width:1265px) {
+  @media(max-width:1250px) {
+    .navbarbutton{
+      /* justify-content: center; */
+      right: 40px;
+    }
+  }
+  @media(max-width:1130px) {
+    .navbarbutton{
+      /* justify-content: center; */
+      right: 1px;
+    }
+  }
+  @media(max-width:1076px) {
     .navbarcontain{
       justify-content: center;
+      /* right: 1px; */
+    }
+    .nav{
+      margin-right: 110px;
+      margin-top: 20px;
+
+    }
+    .navbarbutton{
+      /* justify-content: center; */
+      top: 140px;
     }
   }
   @media(max-width:996px) {
     .nav {
       display: block;
-      margin-right: 150px;
+      /* margin-right: 150px; */
     }
   }
  
