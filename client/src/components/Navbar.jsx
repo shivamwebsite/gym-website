@@ -40,7 +40,7 @@ function Navbar() {
         </nav>
       </div>
       <div className="navbarhandlecont" id="sidebar">
-          <NavLink  className="navbar" to="/about" target='_blank'> <span>ABOUT</span></NavLink>
+          <NavLink  className="navbar" to="/about" > <span>ABOUT</span></NavLink>
           <NavLink  className="navbar" to="/service"><span>SERVICES</span></NavLink>
           <NavLink className="navbar" to="/contact"> <span>CONTACT US</span></NavLink>
           <NavLink className="navbar" to="/"><span>LOG OUT</span></NavLink>
