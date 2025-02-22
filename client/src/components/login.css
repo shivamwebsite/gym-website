@@ -160,10 +160,4 @@ p {
     }
 }
 
-@media(max-width:1374px) {
-    .nav {
-        margin-top: 20px;
-        margin-left: 1px;
-    }
-}
 
