@@ -286,3 +286,21 @@ h1{
         padding-left: 2px;
     }
 }
+
+@media(max-width:400px)
+{
+  .profileedit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+  .profileedit{
+     background-color: #130e33;
+  }
+  .profilelogo1{
+    padding-bottom: 5px;
+  }
+}
