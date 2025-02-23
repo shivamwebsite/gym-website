@@ -146,7 +146,7 @@ function Profile() {
                 </div>
             </section>
             <footer className='profilefooter'>
-                <a href="/contact" target="_blank"> <h1>Contact Me</h1></a>
+                <a href="/contact"> <h1>Contact Me</h1></a>
                 <span class="profilesocial"><span><FaInstagram /></span>
                     <span ><FaFacebook /></span>
                     <span><FaTwitter /></span>
