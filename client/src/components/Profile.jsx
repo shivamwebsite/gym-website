@@ -147,7 +147,7 @@ function Profile() {
                 </div>
             </section>
             <footer className='profilefooter'>
-                <NavLink href="/contact"> <h1>Contact Me</h1></NavLink>
+                <NavLink to="/contact"> <h1>Contact Me</h1></NavLink>
                 <span class="profilesocial"><span><FaInstagram /></span>
                     <span ><FaFacebook /></span>
                     <span><FaTwitter /></span>
