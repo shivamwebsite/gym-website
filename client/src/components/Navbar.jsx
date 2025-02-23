@@ -27,15 +27,16 @@ function Navbar() {
     <div className="navbarcontain">
       <img src="shiv.jpeg" alt="error" />
       <div className="nam">
-        <NavLink  to="/home" className={(e)=>{return e.isActive ? "jabnavbaractive" : "navbaractive"}} ><span
+        <NavLink  to="/home" className="navbaractive" ><span
             className="h">Shivam-Fitness</span></NavLink>
       </div>
       <span className="handle" onClick={handlebaar}><RxDragHandleHorizontal /></span>
       <div class=" nav">
+{/*         {(e)=>{return e.isActive ? "jabnavbaractive" : "navbar"}} */}
         <nav>
           <NavLink   className="navbar" to="/about">About</NavLink>
-          <NavLink   className={(e)=>{return e.isActive ? "jabnavbaractive" : "navbar"}} to="/service">Services</NavLink>
-          <NavLink  className={(e)=>{return e.isActive ? "jabnavbaractive" : "navbar"}} to="/contact">Contact Us</NavLink>
+          <NavLink   className="navbar" to="/service">Services</NavLink>
+          <NavLink  className="navbar" to="/contact">Contact Us</NavLink>
           <NavLink   className="navbar" to="/">Log Out</NavLink>
         </nav>
       </div>
