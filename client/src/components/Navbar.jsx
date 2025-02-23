@@ -20,6 +20,13 @@ function Navbar() {
       document.querySelector(".handle").style.top = "40px";
     }
   }
+    const handleclose=()=>{
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.remove('navbaractive');
+      document.querySelector(".handle").style.position = "relative";
+      document.querySelector(".handle").style.right = "0px";
+      document.querySelector(".handle").style.top = "0px";
+  }
 
   return (
     <> 
@@ -40,7 +47,7 @@ function Navbar() {
           <NavLink   className="navbar" to="/">Log Out</NavLink>
         </nav>
       </div>
-      <div className="navbarhandlecont" id="sidebar">
+      <div className="navbarhandlecont" id="sidebar" onClick={handleclose}>
           <NavLink  className="navbar" to="/about" > <span>ABOUT</span></NavLink>
           <NavLink  className="navbar" to="/service"><span>SERVICES</span></NavLink>
           <NavLink className="navbar" to="/contact"> <span>CONTACT US</span></NavLink>
