@@ -78,7 +78,7 @@ margin: 30px 1px;
     font-size: 25px;
     font-weight: 600; */
     /*top right bottom: left */
-    color: rgb(28 164 2);
+     color: rgb(109, 124, 106);
     z-index: 1;
 }
 
@@ -89,7 +89,7 @@ margin: 30px 1px;
     font-weight: 600;
     padding: 0px 15px 0px 70px;
     /*top right bottom: left */
-    color: rgb(28 164 2);
+    color: rgb(64, 98, 165);
 }
 .box1 {
      border: 2.5px solid red;
@@ -230,9 +230,12 @@ a{
 }
 NavLink:hover{
     /* background-color: lawngreen; */
-    color: chartreuse;
+    color: black;
 }
-
+a:hover{
+    /* background-color: lawngreen; */
+    color: black;
+}
 h1{
     text-decoration: underline;
 }
