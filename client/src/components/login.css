@@ -11,7 +11,9 @@
     justify-content: center;
     align-items: center;
 }
-
+.social a:hover{
+    background-color:transparent;
+}
 .p {
     position: relative;
     color: black;
@@ -97,7 +99,9 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     left: 35px;
 }
-
+#forgotpw:hover{
+background-color: transparent;
+}
 .i{
     display: inline-flex;
     justify-content: center;
