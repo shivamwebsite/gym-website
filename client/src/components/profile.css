@@ -161,7 +161,7 @@ margin: 30px 1px;
 thead{
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #488af8;
+     background:linear-gradient(65.91deg, #4271d6 23.2%, #d6a569 75.67%);
 }
 table{
     text-align: center;
@@ -245,6 +245,9 @@ h1{
 }
 .profilecontactdetails{
     text-align: center;
+}
+.profilefooter h1:hover{
+    color: #bdc3e1;
 }
 @media(max-width:851px)
 {
