@@ -88,7 +88,7 @@
     color: white;
     font-weight: bold;
     font-family: Comic Sans Ms;
-    background-color: black;
+    background: linear-gradient(67.91deg, #051A47 12.2%, #77343C 99.67%);
 }
 
 #forgotpw {
@@ -144,7 +144,7 @@ background-color: transparent;
 
 .Button:hover {
     cursor: pointer;
-    background-color: blue;
+    background:linear-gradient(67.91deg, #8A63DA 12.2%, #DDD888 99.67%);
     color: black;
 }
 
