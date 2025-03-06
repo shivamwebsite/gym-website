@@ -8,6 +8,7 @@ import Contact from './components/Contact'
 import Home from './components/Home'
 import Profile from './components/Profile'
 import Signup from './components/Signup'
+import Enroll from './components/enroll'
 
 function App() {
   const router=createBrowserRouter([
@@ -34,6 +35,10 @@ function App() {
     {
       path:"/sign-up",
       element:<Signup/>
+    },
+        {
+      path:"/enroll",
+      element:<><Navbar/><Enroll/></>
     }
   ])
 
