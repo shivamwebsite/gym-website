@@ -107,7 +107,7 @@ function Login() {
                 <h1>Login</h1>
                 </div>
                 <span className="social">
-                <span className='i'><FaInstagram  /></span>
+               <a href="https://www.instagram.com/0605shivam?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer"> <span className='i'><FaInstagram  /></span></a>
                 <span className='i'><FaFacebook  /></span>
                 <span className='i'><FaTwitter  /></span>
                 </span>
@@ -125,7 +125,7 @@ function Login() {
                     }
                     {errors.myform && <div>{errors.myform.message}</div> }
                 </form><br />
-                <p>No Account? <NavLink to="https://amazon-clone-nine-blush.vercel.app/register" target='_blank'>Register Now</NavLink></p>
+                <p className='p'>No Account? <NavLink to="https://amazon-clone-nine-blush.vercel.app/register" target='_blank'>Register Now</NavLink></p>
                 <a id="forgotpw" href="#Reset Password">Forgot Password?</a>
             </div>
         </div>

@@ -9,6 +9,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io5";
+import { NavLink } from 'react-router-dom';
 
 function Profile() {
     return (
@@ -146,7 +147,7 @@ function Profile() {
                 </div>
             </section>
             <footer className='profilefooter'>
-                <a href="/contact" target="_blank"> <h1>Contact Me</h1></a>
+                <NavLink to="/contact"> <h1>Contact Me</h1></NavLink>
                 <span class="profilesocial"><span><FaInstagram /></span>
                     <span ><FaFacebook /></span>
                     <span><FaTwitter /></span>

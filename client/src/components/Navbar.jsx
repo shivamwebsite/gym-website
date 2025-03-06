@@ -20,6 +20,13 @@ function Navbar() {
       document.querySelector(".handle").style.top = "40px";
     }
   }
+    const handleclose=()=>{
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.remove('navbaractive');
+      document.querySelector(".handle").style.position = "relative";
+      document.querySelector(".handle").style.right = "0px";
+      document.querySelector(".handle").style.top = "0px";
+  }
 
   return (
     <> 
@@ -32,15 +39,16 @@ function Navbar() {
       </div>
       <span className="handle" onClick={handlebaar}><RxDragHandleHorizontal /></span>
       <div class=" nav">
+{/*         {(e)=>{return e.isActive ? "jabnavbaractive" : "navbar"}} */}
         <nav>
           <NavLink   className="navbar" to="/about">About</NavLink>
           <NavLink   className={(e)=>{return e.isActive ? "jabnavbaractive" : "navbar"}} to="/service">Services</NavLink>
           <NavLink  className={(e)=>{return e.isActive ? "jabnavbaractive" : "navbar"}} to="/contact">Contact Us</NavLink>
-          <NavLink   className={(e)=>{return e.isActive ? "jabnavbaractive" : "navbar"}} to="/">Log Out</NavLink>
+          <NavLink   className="navbar" to="/">Log Out</NavLink>
         </nav>
       </div>
-      <div className="navbarhandlecont" id="sidebar">
-          <NavLink  className="navbar" to="/about" target='_blank'> <span>ABOUT</span></NavLink>
+      <div className="navbarhandlecont" id="sidebar" onClick={handleclose}>
+          <NavLink  className="navbar" to="/about" > <span>ABOUT</span></NavLink>
           <NavLink  className="navbar" to="/service"><span>SERVICES</span></NavLink>
           <NavLink className="navbar" to="/contact"> <span>CONTACT US</span></NavLink>
           <NavLink className="navbar" to="/"><span>LOG OUT</span></NavLink>

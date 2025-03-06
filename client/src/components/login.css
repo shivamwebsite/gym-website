@@ -11,8 +11,10 @@
     justify-content: center;
     align-items: center;
 }
-
-p {
+.social a:hover{
+    background-color:transparent;
+}
+.p {
     position: relative;
     color: black;
     font-size: 20px;
@@ -27,7 +29,7 @@ p {
     left: 15px;
     bottom: 20px;
     font-weight: bold;
-    font-family: Comic Sans Ms;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .formbox {
@@ -86,7 +88,7 @@ p {
     color: white;
     font-weight: bold;
     font-family: Comic Sans Ms;
-    background-color: black;
+    background: linear-gradient(67.91deg, #051A47 12.2%, #77343C 99.67%);
 }
 
 #forgotpw {
@@ -97,7 +99,9 @@ p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     left: 35px;
 }
-
+#forgotpw:hover{
+background-color: transparent;
+}
 .i{
     display: inline-flex;
     justify-content: center;
@@ -140,7 +144,7 @@ p {
 
 .Button:hover {
     cursor: pointer;
-    background-color: blue;
+    background:linear-gradient(67.91deg, #8A63DA 12.2%, #DDD888 99.67%);
     color: black;
 }
 
