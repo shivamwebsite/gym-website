@@ -8,7 +8,7 @@ import Contact from './components/Contact'
 import Home from './components/Home'
 import Profile from './components/Profile'
 import Signup from './components/Signup'
-import Enroll from './components/enroll'
+import Enroll from './components/Enroll'
 
 function App() {
   const router=createBrowserRouter([

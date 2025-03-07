@@ -53,10 +53,10 @@ function Navbar() {
           <NavLink className="navbar" to="/contact"> <span>CONTACT US</span></NavLink>
           <NavLink className="navbar" to="/"><span>LOG OUT</span></NavLink>
           {/* <!-- <span>ENROLLMENT</span> --> */}
-          <a  target="_blank"><span>ENROLLMENT</span></a> 
+         <NavLink  to="/enroll"><span>ENROLLMENT</span></NavLink>  
       </div>
       <div>
-        <a target="_blank"><button className="navbarbutton">Enrollement    <FaArrowRight /> </button></a>
+       <NavLink to="/enroll"><button className="navbarbutton">Enrollement    <FaArrowRight /> </button></NavLink>
       </div>
     </div>
   </header>
