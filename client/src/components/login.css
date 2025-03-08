@@ -16,7 +16,7 @@
 }
 .p {
     position: relative;
-    color: black;
+    color: rgb(198, 176, 176);
     font-size: 20px;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -42,9 +42,10 @@
     flex-direction: column;
     justify-content: center;
     border: 2px solid white;
+    background-color: rgba(0,0,0,0.5);
     box-shadow: 0px 0px 25px white;
     border-radius: 20px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(12px);
 }
 
 .formcontainer {
@@ -79,6 +80,7 @@
     top: -29px;
     right: 20px;
      font-weight: bold;
+    color: white;
 }
 
 .submitButton {
@@ -121,7 +123,9 @@ background-color: transparent;
 }
 #forgotpw:hover {
     cursor: pointer;
-    color:blue;
+    color:rgba(255, 255, 255,0.5);
+    transform: scale(1.1) translateX(20px);
+    transition: 0.5s ease-in-out;
 }
 .topHeader h1{
     margin: 10px;
