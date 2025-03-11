@@ -1,7 +1,7 @@
 
 /* LOGIN PAGE  */
 #bodystart {
-    background-image: url("/7.jpeg");
+    background-image: url("/GIF7.gif");
     /* background-color: blue; */
     height: 100vh;
     background-size: cover;
@@ -16,7 +16,7 @@
 }
 .p {
     position: relative;
-    color: black;
+    color: rgb(198, 176, 176);
     font-size: 20px;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -26,9 +26,10 @@
 .topHeader {
     font-size: 30px;
     position: relative;
-    left: 15px;
+    left: 40px;
     bottom: 20px;
     font-weight: bold;
+    color: white;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -41,9 +42,10 @@
     flex-direction: column;
     justify-content: center;
     border: 2px solid white;
+    background-color: rgba(0,0,0,0.5);
     box-shadow: 0px 0px 25px white;
     border-radius: 20px;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(12px);
 }
 
 .formcontainer {
@@ -61,6 +63,7 @@
     opacity: 90%;
     color: black;
     font-weight: bold;
+     background-color: rgba(255, 254, 254, 0.5);
 }
 
 .red{
@@ -69,13 +72,15 @@
     font-size: 17px;
 }
 ::-webkit-input-placeholder {
-    color: grey;
+    color:rgb(42, 41, 41)
 }
 
 .l {
     position: relative;
     top: -29px;
     right: 20px;
+     font-weight: bold;
+    color: white;
 }
 
 .submitButton {
@@ -112,13 +117,15 @@ background-color: transparent;
     border: 2px solid white;
     border-radius: 50%;
     font-size: 20px;
-    color: black;
+     color: white;
     text-decoration: none;
     margin: 30px 15px 30px 0;
 }
 #forgotpw:hover {
     cursor: pointer;
-    color:blue;
+    color:rgba(255, 255, 255,0.5);
+    transform: scale(1.1) translateX(20px);
+    transition: 0.5s ease-in-out;
 }
 .topHeader h1{
     margin: 10px;
@@ -150,10 +157,10 @@ background-color: transparent;
 
 @media(max-width:500px) {
     .formbox {
-        height: 100vh;
-        width: 100vh;
+        height: 70vh;
+        width: 90vw;
         border: none;
-        backdrop-filter: blur(2px);
+        backdrop-filter: blur(7px);
     }
 }
 
