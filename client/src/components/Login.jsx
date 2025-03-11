@@ -55,7 +55,7 @@ function Login() {
             setchecking(false)
         } else if (res.status === 403) {
             // alert("no data");
-            toast.warn("There is some technical issue refresh the page and login again 😅!", {
+            toast.warn("Check your Email and Password!", {
                 position: "top-center",
             })
             setchecking(false)
@@ -125,7 +125,7 @@ function Login() {
                     }
                     {errors.myform && <div>{errors.myform.message}</div> }
                 </form><br />
-                <p className='p'>No Account? <NavLink to="https://amazon-clone-nine-blush.vercel.app/register" target='_blank'>Register Now</NavLink></p>
+                <p className='p'>No Account? <NavLink to="/register" target='_blank'>Register Now</NavLink></p>
                 <a id="forgotpw" href="#Reset Password">Forgot Password?</a>
             </div>
         </div>
