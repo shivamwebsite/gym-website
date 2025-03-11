@@ -24,7 +24,7 @@ function Login() {
     const onSubmit=async (data) =>{
         // data.preventDefault();
         const{email,password}=data;
-        const res = await fetch("https://amazon-clonefront.onrender.com/login", {
+        const res = await fetch("https://gym-website-backend-of83.onrender.com/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
