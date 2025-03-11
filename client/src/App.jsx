@@ -9,6 +9,7 @@ import Home from './components/Home'
 import Profile from './components/Profile'
 import Signup from './components/Signup'
 import Enroll from './components/Enroll'
+import Register from './components/Register'
 
 function App() {
   const router=createBrowserRouter([
@@ -39,6 +40,10 @@ function App() {
         {
       path:"/enroll",
       element:<><Navbar/><Enroll/></>
+    },
+    {
+      path:"/register",
+      element:<Register/>
     }
   ])
 
