@@ -44,8 +44,38 @@
     font-weight: bold;
     color: white;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation-name: shivam;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
 }
+@keyframes shivam {
+    0% {
+        color: rgba(255, 255, 255, 1);
+    }
 
+    25% {
+        /* color: #9390bf; */
+        text-shadow: 0px 0px 10px cyan;
+
+    }
+
+    50% {
+        /* color: #5022a6; */
+        text-shadow: 0px 0px 20px cyan;
+    }
+
+    75% {
+        /* color: #9390bf; */
+        text-shadow: 0px 0px 40px cyan;
+    }
+
+    100% {
+        text-shadow: 0px 0px 80px cyan;
+    }
+
+}
 .formbox {
     display: flex;
     position: relative;
