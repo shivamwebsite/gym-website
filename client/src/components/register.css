@@ -71,12 +71,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 60vh;
+/*     min-height: 60vh; */
 }
 
 .regiform .form h2{
     font-size: 32px;
     color: #fff;
+     margin-top: 10px;
     text-align: center;
      animation-name: shivam1;
     animation-delay: 1s;
