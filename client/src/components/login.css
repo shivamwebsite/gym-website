@@ -187,11 +187,13 @@
         padding: 50px 50px 40px 50px;
     }
     .p{
-        font-size: 15px;
+        font-size: 17px;
+         left: 30px;
     }
     #forgotpw{
         margin-top: 8px;
-        font-size: 15px;
+        font-size: 17px;
+        left: 65px;
     }
 }
 
