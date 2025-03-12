@@ -108,8 +108,8 @@ function Login() {
                 </div>
                 <span className="social">
                <a href="https://www.instagram.com/0605shivam?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer"> <span className='i'><FaInstagram  /></span></a>
-                <span className='i'><FaFacebook  /></span>
-                <span className='i'><FaTwitter  /></span>
+                <a href="https://www.instagram.com/0605shivam?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer"><span className='i'><FaFacebook  /></span></a>
+                <a href="https://www.instagram.com/0605shivam?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer"><span className='i'><FaTwitter  /></span></a>
                 </span>
                 <form onSubmit={handleSubmit(onSubmit)}>
                 {errors.email && <div className='red'>{errors.email.message}</div> }
