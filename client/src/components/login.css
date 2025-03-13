@@ -1,7 +1,7 @@
 
 /* LOGIN PAGE  */
 #bodystart {
-    background-image: url("/GIF7.gif");
+    background-image: url("/gym.webp");
     /* background-color: blue; */
     height: 100vh;
     min-height: 600px;
@@ -85,11 +85,11 @@
     height: 450px;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid white;
-    background-color: rgba(0,0,0,0.5);
+/*     border: 2px solid white; */
+/*     background-color: rgba(0,0,0,0.5); */
     box-shadow: 0px 0px 25px white;
     border-radius: 20px;
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(100px);
 }
 
 .formcontainer {
@@ -209,7 +209,7 @@
         height: 70vh;
         width: 90vw;
         border: none;
-        backdrop-filter: blur(7px);
+/*         backdrop-filter: blur(7px); */
     }
 }
 
