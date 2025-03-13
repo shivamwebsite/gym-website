@@ -1,7 +1,7 @@
 
 /* LOGIN PAGE  */
 #bodystart {
-    background-image: url("/gym.webp");
+/*     background-image: url("/gym.webp"); */
     /* background-color: blue; */
     height: 100vh;
     min-height: 600px;
@@ -11,6 +11,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: slider 20s linear infinite;
+}
+@keyframes slider {
+    0%{
+        background-image: url("/BG4.jpg");
+    }
+    30%{
+        background-image: url("/BG3.jpg");
+    }
+    70%{
+        background-image: url("/BG1.jpg");
+    }
+    100%{
+        background-image: url("/BG2.jpg");
+    }
 }
 .social a:hover{
     background-color:transparent;
@@ -82,14 +97,14 @@
     position: relative;
     padding: 50px 100px 40px 100px;
     width: 300px;
-    height: 450px;
+     min-height: 430px;
     flex-direction: column;
     justify-content: center;
 /*     border: 2px solid white; */
 /*     background-color: rgba(0,0,0,0.5); */
     box-shadow: 0px 0px 25px white;
     border-radius: 20px;
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(15px);
 }
 
 .formcontainer {
@@ -189,12 +204,12 @@
     }
     .p{
         font-size: 17px;
-         left: 30px;
+         left: 15px;
     }
     #forgotpw{
         margin-top: 8px;
         font-size: 17px;
-        left: 60px;
+        left: 50px;
     }
 }
 
@@ -206,8 +221,8 @@
 
 @media(max-width:500px) {
     .formbox {
-        height: 70vh;
-        width: 90vw;
+        min-height: 400px;
+        width: 70vw;
         border: none;
 /*         backdrop-filter: blur(7px); */
     }
