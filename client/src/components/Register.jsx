@@ -41,9 +41,9 @@ export default function Register() {
   const senddata = async (e) => {
     e.preventDefault();
     const { fname, email, mobile, password } = udata;
-    console.log(udata)
+    // console.log(udata)
 
-    const res = await fetch("http://localhost:7000/register", {
+    const res = await fetch("https://gym-website-backend-of83.onrender.com/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

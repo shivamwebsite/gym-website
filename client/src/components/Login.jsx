@@ -24,7 +24,7 @@ function Login() {
     const onSubmit=async (data) =>{
         // data.preventDefault();
         const{email,password}=data;
-        const res = await fetch("https://amazon-clonefront.onrender.com/login", {
+        const res = await fetch("https://gym-website-backend-of83.onrender.com/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -55,7 +55,7 @@ function Login() {
             setchecking(false)
         } else if (res.status === 403) {
             // alert("no data");
-            toast.warn("There is some technical issue refresh the page and login again 😅!", {
+            toast.warn("Check your Email and Password!", {
                 position: "top-center",
             })
             setchecking(false)
@@ -108,8 +108,8 @@ function Login() {
                 </div>
                 <span className="social">
                <a href="https://www.instagram.com/0605shivam?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer"> <span className='i'><FaInstagram  /></span></a>
-                <span className='i'><FaFacebook  /></span>
-                <span className='i'><FaTwitter  /></span>
+                <a href="https://www.instagram.com/0605shivam?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer"><span className='i'><FaFacebook  /></span></a>
+                <a href="https://www.instagram.com/0605shivam?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer"><span className='i'><FaTwitter  /></span></a>
                 </span>
                 <form onSubmit={handleSubmit(onSubmit)}>
                 {errors.email && <div className='red'>{errors.email.message}</div> }
@@ -125,7 +125,7 @@ function Login() {
                     }
                     {errors.myform && <div>{errors.myform.message}</div> }
                 </form><br />
-                <p className='p'>No Account? <NavLink to="https://amazon-clone-nine-blush.vercel.app/register" target='_blank'>Register Now</NavLink></p>
+                <p className='p'>No Account? <NavLink to="/register">Register Now</NavLink></p>
                 <a id="forgotpw" href="#Reset Password">Forgot Password?</a>
             </div>
         </div>

@@ -41,7 +41,7 @@ function Contact() {
     });
 
     const data = await res.json();
-    console.log(data);
+    // console.log(data);
     // console.log(udata)
     if (res.status === 422 || !data) {
       // alert("no data");
@@ -56,10 +56,10 @@ function Contact() {
       setUdata({ ...udata,mobile: ""});
     } else if (res.status === 425) {
       // alert("no data");
-      toast.warn("Invalid Email \n Follow the formate 👎!", {
+      toast.warn("Email is not register 👎!", {
         position: "top-center",
       })
-      setUdata({ ...udata, fname: "", email: ""});
+      setUdata({ ...udata,email: ""});
     }else {
       // alert("data succesfully added");
       toast.success("Thank you for your response 😃!", {
