@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import "./home.css"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Home() {
   return (
@@ -300,13 +302,13 @@ function Home() {
                   <h3 class="text-gray-500 mb-3">TRAINER</h3>
                   <p class="mb-4">Success usually comes to those who are too busy to be looking for it.</p>
                   <span class="inline-flex">
-                    <a class="text-gray-500">
+                    <a href="https://www.instagram.com/ggishhh/?utm_source=ig_web_button_share_sheet" target='_blank' class="text-gray-500">
                       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         class="w-5 h-5" viewBox="0 0 24 24">
                         <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                       </svg>
                     </a>
-                    <a class="ml-2 text-gray-500">
+                    <a href="https://www.instagram.com/ggishhh/?utm_source=ig_web_button_share_sheet" target='_blank' class="ml-2 text-gray-500">
                       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         class="w-5 h-5" viewBox="0 0 24 24">
                         <path
@@ -314,7 +316,7 @@ function Home() {
                         </path>
                       </svg>
                     </a>
-                    <a class="ml-2 text-gray-500">
+                    <a href="https://www.instagram.com/ggishhh/?utm_source=ig_web_button_share_sheet" target='_blank' class="ml-2 text-gray-500">
                       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         class="w-5 h-5" viewBox="0 0 24 24">
                         <path
@@ -337,13 +339,13 @@ function Home() {
                   <p class="mb-4">Never give up on a dream just because of the time it will take to accomplish it. The time
                     will pass anyway.</p>
                   <span class="inline-flex">
-                    <a class="text-gray-500">
+                    <a href="https://www.instagram.com/_triptikumari/?utm_source=ig_web_button_share_sheet" target='_blank' class="text-gray-500">
                       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         class="w-5 h-5" viewBox="0 0 24 24">
                         <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                       </svg>
                     </a>
-                    <a class="ml-2 text-gray-500">
+                    <a href="https://www.instagram.com/_triptikumari/?utm_source=ig_web_button_share_sheet" target='_blank' class="ml-2 text-gray-500">
                       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         class="w-5 h-5" viewBox="0 0 24 24">
                         <path
@@ -351,7 +353,7 @@ function Home() {
                         </path>
                       </svg>
                     </a>
-                    <a class="ml-2 text-gray-500">
+                    <a href="https://www.instagram.com/_triptikumari/?utm_source=ig_web_button_share_sheet" target='_blank' class="ml-2 text-gray-500">
                       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         class="w-5 h-5" viewBox="0 0 24 24">
                         <path
@@ -373,13 +375,13 @@ function Home() {
                   <h3 class="text-gray-500 mb-3">TRAINER</h3>
                   <p class="mb-4">The secret of getting ahead is getting started.</p>
                   <span class="inline-flex">
-                    <a class="text-gray-500">
+                    <a href="https://www.instagram.com/vanshika_agarwal_23/?utm_source=ig_web_button_share_sheet" target='_blank' class="text-gray-500">
                       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         class="w-5 h-5" viewBox="0 0 24 24">
                         <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                       </svg>
                     </a>
-                    <a class="ml-2 text-gray-500">
+                    <a href="https://www.instagram.com/vanshika_agarwal_23/?utm_source=ig_web_button_share_sheet" target='_blank' class="ml-2 text-gray-500">
                       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         class="w-5 h-5" viewBox="0 0 24 24">
                         <path
@@ -387,7 +389,7 @@ function Home() {
                         </path>
                       </svg>
                     </a>
-                    <a class="ml-2 text-gray-500">
+                    <a href="https://www.instagram.com/vanshika_agarwal_23/?utm_source=ig_web_button_share_sheet" target='_blank' class="ml-2 text-gray-500">
                       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         class="w-5 h-5" viewBox="0 0 24 24">
                         <path
@@ -409,13 +411,13 @@ function Home() {
                   <h3 class="text-gray-500 mb-3">Designer</h3>
                   <p class="mb-4">Do something today that your future self will thank you for.</p>
                   <span class="inline-flex">
-                    <a class="text-gray-500">
+                    <a href="https://www.instagram.com/_.pandeyjii_/?utm_source=ig_web_button_share_sheet" target='_blank' class="text-gray-500">
                       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         class="w-5 h-5" viewBox="0 0 24 24">
                         <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                       </svg>
                     </a>
-                    <a class="ml-2 text-gray-500">
+                    <a href="https://www.instagram.com/_.pandeyjii_/?utm_source=ig_web_button_share_sheet" target='_blank' class="ml-2 text-gray-500">
                       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         class="w-5 h-5" viewBox="0 0 24 24">
                         <path
@@ -423,7 +425,7 @@ function Home() {
                         </path>
                       </svg>
                     </a>
-                    <a class="ml-2 text-gray-500">
+                    <a href="https://www.instagram.com/_.pandeyjii_/?utm_source=ig_web_button_share_sheet" target='_blank' class="ml-2 text-gray-500">
                       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         class="w-5 h-5" viewBox="0 0 24 24">
                         <path
