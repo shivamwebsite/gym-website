@@ -26,8 +26,10 @@
     width: 98%;
     height: 32px;
     border-radius: 5px;
+     font-weight: 500;
     border: 1px solid grey;
     color: black;
+    padding: 10px 7px;
 }
 
 #messg {
@@ -45,10 +47,13 @@
     font-weight: bold;
 }
 
-/* .contactbtn:hover {
+.contactbtn:hover {
+    border-radius: 30px;
+    padding: 10px 15px;
     color: black;
+    transition: 0.5s ease-in;
     background-color: blue;
-} */
+}
 
 .contactinside {
     margin: 10px 0px 10px 0px;
@@ -59,12 +64,12 @@
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
-    color: black;
+  color: rgba(0,0,0,0.7);
 }
 
 .contactcontain p {
     margin: 5px 0px 30px 0px;
-    color: rgb(47, 46, 46);
+    color: rgba(0,0,0,0.5);
     font-weight: bold;
     font-size: 15px;
 }
@@ -82,8 +87,8 @@
     }
 }
 .container10{
-    filter: grayscale(1) contrast(1.2) opacity(0.4);
+    filter: grayscale(1) contrast(1.2) opacity(0.5);
 }
 .contactinput::placeholder{
-    color: rgb(46, 46, 46);
+    color: rgba(113,108,108,0.6);
 }
