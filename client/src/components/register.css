@@ -192,6 +192,7 @@ input:valid ~ label{
 .registerbutton{
     height: 40px;
     /* width: 90px; */
+    background-color: white;
     padding: 1px 15px;
     font-size: 15px;
     font-weight: 600;
