@@ -1,16 +1,21 @@
-import { React, useState } from 'react'
+import { React, useState,useContext } from 'react'
 import "./contact.css"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { LoginContext } from './context/ContextProvider';
 
 function Contact() {
 
+ const { account, setAccount } = useContext(LoginContext);
+  // console.log(account)
+
   const [udata, setUdata] = useState({
-    fname: "",
-    email: "",
-    mobile: "",
+    fname: `${account.fname}`,
+    email: `${account.email}`,
+    mobile: `${account.mobile}`,
     messg: ""
   });
+
 
 
   const adddata = (e) => {
@@ -36,7 +41,6 @@ function Contact() {
       },
       body: JSON.stringify({
         fname,email,mobile,messg
-        // fname, email, mobile, messg
       })
     });
 
@@ -74,8 +78,8 @@ function Contact() {
     <>
       <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
       <section id="maincontact">
-        <div class="container10">
-          <iframe width="100%" height="800px" frameborder="0" marginheight="0" marginwidth="0" title="map"
+        <div>
+          <iframe class="container10" width="100%" height="800px" frameborder="0" marginheight="0" marginwidth="0" title="map"
             scrolling="no"
             src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%kolkata(west bengal)+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
           ></iframe>
@@ -86,14 +90,14 @@ function Contact() {
             <div class="contactinside">
               <label htmlFor="fname">Name</label><br />
               <input type="text" class="contactinput" onChange={adddata}
-                value={udata.fname} name='fname' id="fname" placeholder='shivam-shaw' />
+                value={udata.fname} name='fname' id="fname" placeholder='shivam shaw' />
             </div>
             <div class="contactinside">
               <div>
                 <label htmlFor="email">Email</label><br />
                 <input type="email" class="contactinput" onChange={adddata}
                   value={udata.email}
-                  name="email" id="email" placeholder='eg:-shivam-shaw@gmail.com' />
+                  name="email" id="email" placeholder='eg:-example@gmail.com' />
               </div>
             </div>
             <div class="contactinside">
