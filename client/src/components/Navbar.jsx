@@ -17,7 +17,7 @@ function Navbar() {
       sidebar.classList.add('navbaractive');
       document.querySelector(".handle").style.position = "absolute";
       document.querySelector(".handle").style.right = "30px";
-      document.querySelector(".handle").style.top = "40px";
+      document.querySelector(".handle").style.top = "35px";
     }
   }
     const handleclose=()=>{
@@ -37,7 +37,7 @@ function Navbar() {
         <NavLink  to="/home" className={(e)=>{return e.isActive ? "jabnavbaractive" : "navbaractive"}} ><span
             className="h">Shivam-Fitness</span></NavLink>
       </div>
-      <span className="handle" onClick={handlebaar}><RxDragHandleHorizontal /></span>
+      <span className="handle" onClick={handlebaar}><RxDragHandleHorizontal style={{fontSize:"25px"}} /></span>
       <div class=" nav">
 {/*         {(e)=>{return e.isActive ? "jabnavbaractive" : "navbar"}} */}
         <nav>
@@ -53,10 +53,10 @@ function Navbar() {
           <NavLink className="navbar" to="/contact"> <span>CONTACT US</span></NavLink>
           <NavLink className="navbar" to="/"><span>LOG OUT</span></NavLink>
           {/* <!-- <span>ENROLLMENT</span> --> */}
-         <NavLink  to="/enroll"><span>ENROLLMENT</span></NavLink>  
+         <NavLink  to="/enroll"><span className='handlearrow'>ENROLLMENT<FaArrowRight className='enroolarrow' /></span></NavLink>  
       </div>
       <div>
-       <NavLink to="/enroll"><button className="navbarbutton">Enrollement    <FaArrowRight /> </button></NavLink>
+       <NavLink to="/enroll"><button className="navbarbutton">Enrollement<FaArrowRight className='enroolarrow' /> </button></NavLink>
       </div>
     </div>
   </header>
