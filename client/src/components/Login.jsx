@@ -9,9 +9,11 @@ import { FaUser } from "react-icons/fa";
 import { FaKey } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { LoginContext } from './context/ContextProvider';
 
 function Login() {
-
+    
+    const { account, setAccount } = useContext(LoginContext);
     const [checking, setchecking] = useState(false)
     const {
         register,
@@ -21,6 +23,15 @@ function Login() {
         formState: { errors ,isSubmitting}
     } = useForm();
 
+        useEffect(() => {
+       toast.info("Maintain a single mode throughout the session !!", {
+              position: "top-center"
+            });
+       toast.info("Don't refresh the page after login !!", {
+                position: "top-center"
+              });
+    }, [])
+    
     const onSubmit=async (data) =>{
         // data.preventDefault();
         const{email,password}=data;
@@ -60,6 +71,7 @@ function Login() {
             })
             setchecking(false)
         } else {
+            setAccount(data1);
             toast.success("Login Successfully done 😃!", {
                 position: "top-center"
             });
@@ -67,35 +79,24 @@ function Login() {
             
         }
     }
-    
 
-    // const onSubmit = async (data) => {
-    //     // await delay(4); // network delay raising
-    //     // let r= await fetch("http://localhost:3000/",{
-    //     //     method:"POST",
-    //     //     headers:{ 
-    //     //         "Content-Type":"application/json",
-    //     //     },body:JSON.stringify(data)
-    //     // })
-    //     // let res = await r.text()
-    //     // console.log(data,res);
-    //     if(data.username !== "shivam" || data.password !== "1234"){
-    //         toast.error("Invalid Username and Password",{
-    //             position:'top-center'
-    //         });
-    //         toast.error("Refresh the page and then enter correct details",{
-    //             position:'top-center'
-    //         });
-    //         setError("myform",{message:"Invalid Userid re-enter"}) // ya overall form ka errors lega
-    //         setchecking(false);
-    //     }
-    //     else{
-    //       toast.success("Welcome to Shivam Gym website Know you can login!", {
-    //         position: 'top-center'
-    //         });
-    //         setchecking(true);
-    //     }
-    // }
+        function getdata() {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            // console.log("going on");
+            resolve(455);
+          }, 1000);
+        })
+      }
+
+      const greet=async ()=>{
+        let greeting = await getdata()
+        let str = " welcome to Shivam-Fitness"
+        toast.success("Hello " + `${account.fname.toUpperCase()}` + str, {
+          position: "top-center"
+        });
+      }
+
 
 
   return (
@@ -121,7 +122,7 @@ function Login() {
 
                 {/* <a href="/home"><button type="submit" id='button' className="submitButton Button" >Continue</button></a> */}
 
-                {(checking)?<NavLink className={(e) => { return e.isActive ? "red" : "" }} to="/home"><input disabled={isSubmitting} type="submit" value="Login" id='button' className="submitButton Button" /></NavLink>:<input disabled={isSubmitting} type="submit" value="Submit" id='button' className="submitButton Button" />
+                {(checking)?<NavLink className={(e) => { return e.isActive ? "red" : "" }} to="/home"><input disabled={isSubmitting} type="submit" value="Login" onClick={greet} id='button' className="submitButton Button" /></NavLink>:<input disabled={isSubmitting} type="submit" value="Submit" id='button' className="submitButton Button" />
                     }
                     {errors.myform && <div>{errors.myform.message}</div> }
                 </form><br />
