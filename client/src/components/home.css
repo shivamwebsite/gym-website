@@ -1,25 +1,30 @@
 #shivam img {
     border-radius: 10px;
-    border: 2px solid red;
+/*     border: 2px solid red; */
+     box-shadow: 0 0 20px rgb(51, 94, 202);
     padding: 4px;
 }
 
 #body img {
     border-radius: 5px;
-    border: 2px solid blue;
+/*     border: 2px solid blue; */
     padding: 4px;
+      border-radius: 15px;
+    box-shadow: 0 0 10px black;
 }
 
 #nbody img {
     height: 400px;
     width: 400px;
     border-radius: 100%;
-    border: 2px solid red;
+/*     border: 2px solid red; */
+     box-shadow: 0 0 20px rgb(20, 19, 19);
     padding: 4px;
 }
 .main img:hover {
     transform: translateX(50px) scale(1.7);
     z-index: 500;
     border: none;
+     transition: 1s;
     /* transform: */
   }
