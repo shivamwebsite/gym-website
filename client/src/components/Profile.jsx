@@ -16,7 +16,7 @@ function Profile() {
         <>
             <div className="profilebody">
             <header class="profileedit">
-                <img align="right" src="/shiv.jpeg" alt="error" />
+                <img align="right" src="/9.jpg" alt="error" />
                 <h1 class="profiletopheader">SHIVAM PRASAD SHAW</h1>
                 <div class="bottomheader">DOB:-06/05/2002</div>
                 <div class="bottomheader">Address:-24/1 Dr.H.K.Chaterjee Lane,Ghusuri Howrah -711107</div>
