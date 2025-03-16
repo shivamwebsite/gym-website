@@ -32,7 +32,7 @@ function Navbar() {
     <> 
     <header className='navbarheader'>
     <div className="navbarcontain">
-      <img src="shiv.jpeg" alt="error" />
+      <img src="33.jpg" alt="error" />
       <div className="nam">
         <NavLink  to="/home" className={(e)=>{return e.isActive ? "jabnavbaractive" : "navbaractive"}} ><span
             className="h">Shivam-Fitness</span></NavLink>
