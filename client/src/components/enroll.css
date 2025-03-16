@@ -10,13 +10,13 @@
 }
 .banner .slider{
     position: absolute;
-    width: 200px;
+    width: 210px;
     height: 250px;
     top: 10%;
     left: calc(50% - 100px);
     transform-style: preserve-3d;
     transform: perspective(1000px);
-    animation: autoRun 20s linear infinite;
+    animation: autoRun 70s linear infinite;
 }
 @keyframes autoRun {
     from{
@@ -27,6 +27,9 @@
     }
 }
 
+.banner .slider:hover{
+    animation-play-state:paused;
+}
 
 .banner .slider .item{
     position: absolute;
