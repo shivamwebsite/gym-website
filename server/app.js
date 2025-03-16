@@ -80,7 +80,7 @@ const regi = new mongoose.model("Register-Details",registerSchema );
 // register the data
 
 app.post("/register", async (req, res) => {
-    console.log(req.body);
+    // console.log(req.body);
 
     const { fname, email, mobile, password } = req.body;
 
@@ -176,7 +176,7 @@ const insertdata = async()=>{
 
 
 app.post("/feed", async (req, res) => {
-    console.log(req.body);
+    // console.log(req.body);
 
     const { fname,email,mobile,messg } = req.body;
 
