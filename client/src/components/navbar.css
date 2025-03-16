@@ -14,10 +14,6 @@
     align-items: center;
     position: relative;
   }
-
-
-
-
   .handle {
     display: none;
     color: white;
@@ -47,6 +43,7 @@ border: 2px solid rgb(168, 165, 165);
     color: black;
     border-radius: 20px;
     text-align: center;
+    margin-top: 2px;
     border-bottom: 2px solid #ddd;
   }
 
@@ -67,7 +64,6 @@ header img {
     width: 110px;
     height: 110px;
     border-radius: 100%;
-    border: 4px solid rgb(86 3 255);
    animation-name: shivamlogo;
   animation-delay: 1s;
   animation-iteration-count: infinite;
@@ -189,7 +185,7 @@ header img {
   }
 
   a:hover {
-    background-color: rgb(249, 248, 252);
+/*     background-color: rgb(249, 248, 252); */
     text-decoration: underline;
     /* color: blue; */
     cursor: pointer;
