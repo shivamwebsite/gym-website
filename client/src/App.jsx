@@ -7,7 +7,6 @@ import Service from './components/Service'
 import Contact from './components/Contact'
 import Home from './components/Home'
 import Profile from './components/Profile'
-import Signup from './components/Signup'
 import Enroll from './components/Enroll'
 import Register from './components/Register'
 
@@ -34,10 +33,6 @@ function App() {
       element:<Profile/>
     },
     {
-      path:"/sign-up",
-      element:<Signup/>
-    },
-        {
       path:"/enroll",
       element:<><Navbar/><Enroll/></>
     },
