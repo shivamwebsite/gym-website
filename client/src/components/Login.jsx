@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useContext,useEffect } from 'react'
 import "./login.css"
 import { NavLink } from 'react-router-dom'
 import { useForm } from "react-hook-form";
