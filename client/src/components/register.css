@@ -155,7 +155,7 @@ input:valid ~ label{
 
 }
 .regiform input:focus::placeholder{
-    color: rgb(67, 60, 60);
+     color: rgba(255, 255, 255, 0.6);
     cursor: pointer;
 }
 
