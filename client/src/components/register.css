@@ -162,7 +162,7 @@ input:valid ~ label{
  .group{
     display: flex;
     justify-content: space-between;
-    font-size: 13px;
+    font-size: 15px;
 }
 .group a{
     position: relative;
